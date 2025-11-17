@@ -8,7 +8,7 @@ import gleam from "vite-plugin-gleam"
 import tailwind from "@tailwindcss/vite"
 
 export default defineConfig({
-	plugins: [gleam({ bin: "gleam", cwd: ".", log: { level: "trace" } }), tailwind()],
+	plugins: [gleam(), tailwind()],
 	resolve: {
 		alias: {
 			'@gleam': resolve(__dirname, "./build/dev/javascript")
