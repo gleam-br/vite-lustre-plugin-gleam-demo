@@ -1,3 +1,9 @@
-import * as app from "./app.gleam";
+// Test counter gleam ffi
 
-app.main();
+import { main } from "./counter/main"
+
+// Test counter lustre package
+// import "./main.css"
+// import { main } from "./app.gleam";
+
+main();
